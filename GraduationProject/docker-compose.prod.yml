@@ -1,0 +1,17 @@
+
+
+services:
+  web:
+    build:
+      context: ./docker/web
+      target: production
+    environment:
+      - WEB_ENV=production
+    volumes:
+      - php_config:/usr/local/etc/php
+volumes:
+  php_config:      
+
+
+ 
+   

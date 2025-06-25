@@ -1,0 +1,15 @@
+
+
+services:
+  web:
+    build:
+      context: ./docker/web
+      target: development
+    environment:
+      - WEB_ENV=development
+      
+  
+
+ 
+    
+    

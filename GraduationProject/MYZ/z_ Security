@@ -1,0 +1,33 @@
+                        Priorities:
+
+✔️ 1- XSS ---> prevented by filtering data from requests.
+
+✔️ 2- SQL Injection ---> prevented by using PDO:prepare, bind_param, etc.
+                    --->          by filtering data from requests.
+
+✔️ 3- Broken access control ---> prevented by using POST requests instead of GET. However, POST requests can also be manipulated.
+                                prevented by storing the user's details in $_SESSION[].
+
+✔️ 4- Information Disclosure ---> listing directories was prevented by adding a .htaccess file within htdocs.
+
+                            ---> in the apache conf. file we added  ServerTokens Prod
+                                                                    ServerSignature Off
+
+✔️ 5- Authentication ---> was prevented by making a strong password or limiting login attempts.
+
+
+                        Non-Priorities:
+
+✔️ 6- Request and Response ---> same as point 3.
+
+✔️ 7- Brute Force ---> same as point 5
+
+✔️ 8- Find a suitable way to hash the passwords and store them in the database. ---> we used password_hash() and password_verify().
+
+✔️ 9- Search on how to disable error in php.  --> Can prevent Information disclosure ---> same as point 3, although there are more advanced measures.
+
+✔️ 10- Upload files securely -> check on file name, size, extenstions, and MIME types. ---> check was done using $_FILES[][].
+
+✔️ 11- Validate register.php, login.php, checkout.php and account.php in the backend for extra security. ---> valdation used if statments and empty() function.
+
+✔️ 12- Session Fixation ---> was prevented by regenerating session id after logging in and logging out.

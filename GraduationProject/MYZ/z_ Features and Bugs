@@ -1,0 +1,36 @@
+
+✔️ 1. Remove admin/login.php and make it that both admins and users use the same login page. (Improvement)
+
+✔️ 2. Account in index.php make it that the when user is logged in is displays account or logout options
+
+✔️ 3. Fix display of shop.php when the filter is applied and no products is found.
+
+✔️ 4. At shop.php remove the old pagination and add the new pagination found in admin dashboard.
+
+✔️ 5. Fix pagination in shop.php. When filter is applied the pagination bugs when the category is set to none.
+
+✔️ 6. Add reset button in the filter in shop.php.
+
+✔️ 7. When deleting a product in product.php, the images are not deleted from the directory. (See Secure Uploading Files in PHP on YouTube)
+
+✔️ 8. When adding a product in add_product.php, try and name the images after the product ID not the name. (See Secure Uploading Files in PHP on YouTube)
+
+X 9. Whilst updating images in edit_image.php, set prevalues for the image. (Most likely not possible due to security reason)
+
+✔️ 10. The 'Products' and 'Orders' in products.php and orders.php respectively, should be adjusted so they are near the table.
+
+✔️ 11. Allow user to add to cart without redirecting.
+
+✔️ 12. In the admin dashboard, adjust the sidebar icons.
+
+✔️ 13. In order_details.php the total does not print with decimal.
+
+✔️ 14. In line 14 and 16 in checkout.php, the script will not exit, hence try and add error in the get and redirect using header with GET and then exit. Then display the error in cart.php instead of an alert.
+
+✔️ 15- In edit_products.php When updating the price into something with decimal (for example 3500.50), the price is not registered on the database and cant be filtered.
+
+✔️ 16- If there are a lot of pages the current pagination will be unpractical.
+
+✔️ 17- In index.php, make it so that the user when clicking on sofas the filter is applied immediatly onto the shop.php page
+
+✔️ 18. When the user refreshes the page after adding products to cart, resubmission occurs. (Use )

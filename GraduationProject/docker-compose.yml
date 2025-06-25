@@ -1,0 +1,31 @@
+
+services:
+   
+   web:
+        build: ./docker/web
+        volumes:
+          - ./:/var/www/html/
+        ports:
+          - 80:80
+   db:
+        image: mysql:latest
+       
+        volumes:
+          - db:/var/lib/mysql/
+         
+        environment:
+          MYSQL_ALLOW_EMPTY_PASSWORD: 1
+          MYSQL_DATABASE: php_project
+  
+
+   phpmyadmin:
+        image: phpmyadmin
+        restart: always
+        ports:
+          - 8080:80
+
+        environment:
+          - PMA_HOST=db
+        
+volumes:
+  db:
