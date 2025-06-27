@@ -2,7 +2,7 @@
 services:
    
    web:
-        build: ./docker/web
+        # build: ./docker/web
         volumes:
           - ./:/var/www/html/
         ports:
