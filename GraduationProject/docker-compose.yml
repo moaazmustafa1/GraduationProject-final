@@ -3,10 +3,12 @@ services:
    
    web:
         # build: ./docker/web
+        contianer-name: web_contianer
+        image: moaazmustafa/grad
         volumes:
           - ./:/var/www/html/
         ports:
-          - 80:80
+          - 443:443
    db:
         image: mysql:latest
        
