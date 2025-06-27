@@ -2,7 +2,8 @@
 
 services:
   web:
-    contianer-name: web_contianer
+    
+    
     build:
       context: ./docker/web
       target: production

@@ -3,7 +3,7 @@ services:
    
    web:
         # build: ./docker/web
-        contianer-name: web_contianer
+        
         image: moaazmustafa/grad
         volumes:
           - ./:/var/www/html/
